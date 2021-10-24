@@ -45,8 +45,6 @@ Shader "Unlit/InvisSurface"
             
             fixed4 frag(v2f i) : SV_Target
             {
-                fixed4 col = tex2D(_MainTex, i.uv);
-                col.a = 0;
                 // Depending the distance from the player, we use a different texture
                 if(distance(_PlayerPos.xyz, i.worldPos.xyz) < _Dist)
                     return tex2D(_MainTex, i.uv);
