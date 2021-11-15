@@ -13,7 +13,7 @@ public class ProximityColorChange : MonoBehaviour
         // Grabs the material from the object
         Mat = GetComponent<Renderer>().material;
         
-        Player = GameObject.Find("Player");
+        Player = GameObject.Find("Player2");
     }
  
     void Update()

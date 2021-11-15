@@ -17,6 +17,7 @@ Shader "Unlit/InvisSurface"
             ColorMask RGB
             Blend SrcAlpha OneMinusSrcAlpha
             CGPROGRAM
+            
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
